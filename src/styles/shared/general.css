@@ -1,0 +1,65 @@
+:root {
+  --dark-accent: rgb(238, 144, 160);
+  --darker-accent: rgb(192, 109, 123);
+  --primary: pink;
+  --light-accent: rgb(248, 216, 221);
+  --grey-accent: rgb(223, 204, 207);
+}
+body {
+  font-family: "Edu VIC WA NT Beginner";
+  color: rgb(33, 33, 33);
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid var(--dark-accent);
+}
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+input,
+select,
+button {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-weight: bold;
+}
+
+.limit-text-to-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+select {
+  color: var(--dark-accent);
+  background-color: var(--light-accent);
+  border: 1px solid var(--grey-accent);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px var(--grey-accent);
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-primary {
+  color: var(--darker-accent);
+  background-color: var(--primary);
+  border: 2px solid var(--darker-accent);
+  box-shadow: 0 2px 5px var(--grey-accent);
+}
+
+.button-primary:hover {
+  background-color: var(--dark-accent);
+  border: 2px solid var(--darker-accent);
+  color: var(--light-accent);
+}
